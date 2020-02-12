@@ -18,7 +18,7 @@ body {
 .container-center {
     position: relative;
 }
-.main {
+main {
     margin: 0;
     position: absolute;
     top: 50%;
@@ -139,6 +139,10 @@ body {
     }
 
 footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 2rem;
   text-align: center;
   height: 10rem;
