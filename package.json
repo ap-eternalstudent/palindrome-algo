@@ -1,0 +1,23 @@
+{
+  "name": "palindrome",
+  "version": "1.0.0",
+  "description": "a simple palindrome excercise with frontend",
+  "main": "script.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ap-eternalstudent/palindrome-algo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ap-eternalstudent/palindrome-algo/issues"
+  },
+  "homepage": "https://github.com/ap-eternalstudent/palindrome-algo#readme"
+}

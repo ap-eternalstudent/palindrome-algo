@@ -1,0 +1,186 @@
+@import 'abstract/mixins';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+html {
+    font-size: 62.5%; // 1 rem = 10 px 10px/16px 62.5%
+
+    @include respond(big-desktop) {
+        font-size: 75%;
+    }
+    @include respond(tab-land) {
+        font-size: 56.2%;
+    }
+    @include respond(tab-port) {
+        font-size: 50%;
+    }
+    @include respond(phone) {
+        font-size: 40%;
+    }
+
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container-center {
+    position: relative;
+}
+main {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 95vh;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    @include respond(phone) {
+        width: 80%;
+        top: 50%;
+    }
+}
+
+.heading-primary-main {
+    font-size: 7rem;
+    display: block;
+    @include respond(phone) {
+        font-size: 6rem;
+    }
+}
+
+.heading-primary-sub {
+    font-size: 8rem;
+    display: block;
+    @include respond(phone) {
+        font-size: 8rem;
+    }
+}
+
+.word-definition {
+  margin-top: 5rem;
+}
+
+.word-definition > * {
+  margin-top: 5rem;
+  font-size: 3rem;
+}
+
+.message-output {
+  margin-top: 4rem;
+  display: block;
+}
+
+.message-success {
+  font-size: 3rem;
+  color: #3fa83b;
+  display: block;
+}
+
+.message-fail {
+  font-size:3rem;
+  color: rgb(202, 88, 88)  
+}
+.actions {
+  margin-top: 5rem;
+  display: block;
+//   height: 50vh;
+}
+
+.input-box-field {
+    margin-top: 1rem;
+    height: 5rem;
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    outline: none;
+
+}
+.input-box-field:focus {
+    height: 5rem;
+    font-size: 3rem;
+    outline: none;
+    background-color: rgba(205, 205, 205, 0.756);
+}
+
+.btn-container {
+    float: right;
+    @include respond(phone) {
+        float: none;
+        font-size: 40%;
+        padding: 5rem 0 10rem 0;
+        text-align: center;
+    }
+}
+
+.btn, .btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    font-size: 3rem;
+    font-weight: 700;
+    cursor: pointer;
+    width: 35rem;
+    text-align: center;
+  }
+  
+  .btn:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); 
+  }
+    .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; 
+    }
+    .btn--animated:hover {
+      animation: moveInButtom ease-out .4s .75s;
+      animation-fill-mode: backwards; 
+    }
+  
+  .btn:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); 
+  }
+  
+  .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: all .4s; 
+  }
+  
+  .btn--black {
+    background-color: rgb(0, 0, 0);
+    color: #fff; 
+  }
+    .btn--black::after {
+      background-color: #cdcdcd; 
+    }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 1rem;
+//   height: 5vh;
+}
