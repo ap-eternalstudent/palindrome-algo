@@ -32,65 +32,63 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Courier New', Courier, monospace; }
-
-.container-center {
+  font-family: 'Courier New', Courier, monospace;
+  height: 100vh;
   position: relative; }
 
 main {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  height: 90vh;
-  transform: translate(-50%, -50%);
-  width: 60%; }
-  @media (max-width: 37.5em) {
-    main {
-      width: 80%; } }
+  text-align: center;
+  width: 80%;
+  margin: 0 auto; }
 
-.heading-primary-main {
-  font-size: 7rem;
-  display: block; }
-  @media (max-width: 37.5em) {
-    .heading-primary-main {
-      font-size: 6rem; } }
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.footer-words {
+  padding-bottom: 2rem; }
+
+.container-center {
+  display: inline-block; }
+
+.heading-primary {
+  text-align: left;
+  margin-top: 20rem;
+  font-size: 6rem;
+  font-weight: 400; }
 
 .heading-primary-sub {
-  font-size: 8rem;
-  display: block; }
-  @media (max-width: 37.5em) {
-    .heading-primary-sub {
-      font-size: 8rem; } }
+  font-size: 7rem;
+  font-weight: 700; }
 
 .word-definition {
-  margin-top: 5rem; }
-
-.word-definition > * {
   margin-top: 5rem;
-  font-size: 3rem; }
+  font-size: 2.5rem;
+  text-align: justify; }
 
-.message-output {
-  margin-top: 4rem;
-  display: block; }
+.word-intro {
+  text-align: center;
+  font-weight: 700; }
 
-.message-success {
-  font-size: 3rem;
-  color: #3fa83b;
-  display: block; }
+.syl-break {
+  font-weight: 400; }
 
-.message-fail {
-  font-size: 3rem;
-  color: #ca5858; }
-
-.actions {
-  margin-top: 5rem;
-  display: block; }
+.description {
+  margin-top: 3rem;
+  font-size: 2.6rem;
+  text-align: left; }
 
 .input-box-field {
-  margin-top: 1rem;
+  margin-top: 3rem;
   height: 5rem;
+  width: 100%;
   font-size: 3rem;
+  text-align: center;
+  background-color: #111;
+  color: white;
   font-family: 'Courier New', Courier, monospace;
   border: none;
   outline: none; }
@@ -99,16 +97,12 @@ main {
   height: 5rem;
   font-size: 3rem;
   outline: none;
+  color: black;
   background-color: rgba(205, 205, 205, 0.756); }
 
 .btn-container {
-  float: right; }
-  @media (max-width: 37.5em) {
-    .btn-container {
-      float: none;
-      font-size: 40%;
-      padding: 5rem 0 10rem 0;
-      text-align: center; } }
+  margin-top: 10rem;
+  display: inline-block; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -159,11 +153,15 @@ main {
 .btn--black::after {
   background-color: #cdcdcd; }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 2rem;
-  text-align: center;
-  padding-bottom: 1rem; }
+.message-output {
+  margin-top: 4rem;
+  display: block; }
+
+.message-success {
+  font-size: 3rem;
+  color: #3fa83b;
+  display: block; }
+
+.message-fail {
+  font-size: 3rem;
+  color: #ca5858; }

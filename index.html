@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Courier+Prime:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
+    <main class="main-container">
         <div class="container-center">
             <h1 class="heading-primary">
                 <span class="heading-primary-main">Is it a</span> 
@@ -19,9 +19,11 @@
         </div>
         <div class="container-center">
             <div class="word-definition">
-                <span class="word-syllables">pal&#8203;​in&#8203;​drome</span>  
-                <span class="syl-break">|</span>  
-                <span class="word-pronounce"> ˈpa-lən-ˌdrōm</span>      
+                <div class="word-intro">
+                    <span class="word-syllables">pal&#8203;​in&#8203;​drome</span>  
+                    <span class="syl-break">|</span>  
+                    <span class="word-pronounce">ˈpa-lən-ˌdrōm</span>      
+                </div>
                 <p class="description">
                     : a word, verse, or sentence (such as "Able was I ere I saw Elba") 
                     or a number (such as 1881) that reads the same backward or forward
@@ -37,13 +39,14 @@
                 <p class="message-text"></p>
             </div>
         </div>
-        
     </main>
     <footer>
-        <p class="footer-words">
-            &copy; by Anton,
-            <br> a weekend project in 2020
-        </p>
+        <div class="container-center">
+            <p class="footer-words">
+                &copy; by Anton,
+                <br> a weekend project in 2020
+            </p>
+        </div>
     </footer>
     <script type="text/javascript" src="script.js"></script>
 </body>
