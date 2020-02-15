@@ -182,19 +182,143 @@ footer {
     }
 
 .message-output {
-  margin-top: 4rem;
-  display: block;
+    margin-top: 4rem;
+    display: block;
 }
+
+@keyframes nod {
+    0% {
+      transform: translate(0, 3px);
+    }
+    50% {
+      transform: translate(0, -3px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  @-moz-keyframes nod {
+    0% {
+      transform: translate(0, 3px);
+    }
+    50% {
+      transform: translate(0, -3px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  @-webkit-keyframes nod {
+    0% {
+      transform: translate(0, 3px);
+    }
+    50% {
+      transform: translate(0, -3px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  @-ms-keyframes nod {
+    0% {
+      transform: translate(0, 3px);
+    }
+    50% {
+      transform: translate(0, -3px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  @-o-keyframes nod {
+    0% {
+      transform: translate(0, 3px);
+    }
+    50% {
+      transform: translate(0, -3px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
 
 .message-success {
   font-size: 3rem;
   color: #3fa83b;
   display: block;
+  animation: nod 150ms 2 linear;
 }
+
+@keyframes shake {
+    0% {
+      transform: translate(3px, 0);
+    }
+    50% {
+      transform: translate(-3px, 0);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  @-moz-keyframes shake {
+    0% {
+        transform: translate(3px, 0);
+    }
+    50% {
+        transform: translate(-3px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+  }
+
+  @-webkit-keyframes shake {
+    0% {
+        transform: translate(3px, 0);
+    }
+    50% {
+        transform: translate(-3px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+  }
+
+  @-ms-keyframes shake {
+    0% {
+        transform: translate(3px, 0);
+    }
+    50% {
+        transform: translate(-3px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+  }
+
+  @-o-keyframes shake {
+    0% {
+        transform: translate(3px, 0);
+    }
+    50% {
+        transform: translate(-3px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+  }
 
 .message-fail {
   font-size:3rem;
-  color: rgb(202, 88, 88)  
+  color: rgb(202, 88, 88);
+  display: block;
+  animation: shake 150ms 2 linear;
 }
 
 

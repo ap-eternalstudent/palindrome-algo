@@ -161,11 +161,94 @@ footer {
   margin-top: 4rem;
   display: block; }
 
+@keyframes nod {
+  0% {
+    transform: translate(0, 3px); }
+  50% {
+    transform: translate(0, -3px); }
+  100% {
+    transform: translate(0, 0); } }
+
+@-moz-keyframes nod {
+  0% {
+    transform: translate(0, 3px); }
+  50% {
+    transform: translate(0, -3px); }
+  100% {
+    transform: translate(0, 0); } }
+
+@-webkit-keyframes nod {
+  0% {
+    transform: translate(0, 3px); }
+  50% {
+    transform: translate(0, -3px); }
+  100% {
+    transform: translate(0, 0); } }
+
+@-ms-keyframes nod {
+  0% {
+    transform: translate(0, 3px); }
+  50% {
+    transform: translate(0, -3px); }
+  100% {
+    transform: translate(0, 0); } }
+
+@-o-keyframes nod {
+  0% {
+    transform: translate(0, 3px); }
+  50% {
+    transform: translate(0, -3px); }
+  100% {
+    transform: translate(0, 0); } }
+
 .message-success {
   font-size: 3rem;
   color: #3fa83b;
-  display: block; }
+  display: block;
+  animation: nod 150ms 2 linear; }
+
+@keyframes shake {
+  0% {
+    transform: translate(3px, 0); }
+  50% {
+    transform: translate(-3px, 0); }
+  100% {
+    transform: translate(0, 0); } }
+
+@-moz-keyframes shake {
+  0% {
+    transform: translate(3px, 0); }
+  50% {
+    transform: translate(-3px, 0); }
+  100% {
+    transform: translate(0, 0); } }
+
+@-webkit-keyframes shake {
+  0% {
+    transform: translate(3px, 0); }
+  50% {
+    transform: translate(-3px, 0); }
+  100% {
+    transform: translate(0, 0); } }
+
+@-ms-keyframes shake {
+  0% {
+    transform: translate(3px, 0); }
+  50% {
+    transform: translate(-3px, 0); }
+  100% {
+    transform: translate(0, 0); } }
+
+@-o-keyframes shake {
+  0% {
+    transform: translate(3px, 0); }
+  50% {
+    transform: translate(-3px, 0); }
+  100% {
+    transform: translate(0, 0); } }
 
 .message-fail {
   font-size: 3rem;
-  color: #ca5858; }
+  color: #ca5858;
+  display: block;
+  animation: shake 150ms 2 linear; }
