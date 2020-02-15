@@ -12,7 +12,7 @@ html {
     font-size: 62.5%; // 1 rem = 10 px 10px/16px 62.5%
 
     @include respond(big-desktop) {
-        font-size: 75%;
+        font-size: 60%;
     }
     @include respond(tab-land) {
         font-size: 56.2%;
@@ -29,7 +29,7 @@ html {
 body {
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     
 }
@@ -38,6 +38,15 @@ main {
     text-align: center;
     width: 80%;
     margin: 0 auto;
+    @include respond(big-desktop) {
+        font-size: 60%;
+        width: 60%;
+    }
+    @include respond(phone) {
+        font-size: 40%;
+        width: 80%;
+    }
+
 }
 
 footer {
@@ -57,15 +66,19 @@ footer {
 
 .heading-primary {
     text-align: left;
-    margin-top: 20rem;
-    font-size: 6rem;
+    margin-top: 5rem;
+    font-size: 4rem;
     font-weight: 400;
 }
 
 .heading-primary-sub{
-    font-size: 7rem;
+    font-size: 5rem;
     font-weight: 700;
 }
+
+// .actions {
+//     margin: auto;
+// }
 
 .word-definition {
     margin-top: 5rem;
