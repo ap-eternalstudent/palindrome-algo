@@ -3,7 +3,7 @@ let word = "";
 const submitBtn = document.querySelector(".submitBtn");
 const inputBox = document.querySelector(".input-box-field");
 
-const messageText = document.querySelector(".message-text");
+const messageText = document.getElementById("message");
 
 function submitWord() {
     word = document.querySelector(".input-box-field").value.toLowerCase();
@@ -34,18 +34,32 @@ function checkForKeypress(event) {
 function createSuccessMessage() {
         messageText.innerHTML = "It's a palindrome!" 
         messageText.className = "message-success";
+        messageText.classList.remove("message-success");
+        void messageText.offsetWidth;
+        messageText.classList.add("message-success");
+        
 }
 function createFailMessage() {
         messageText.innerHTML = "It's NOT a palindrome!" 
         messageText.className = "message-fail";
+        messageText.classList.remove("message-fail");
+        void messageText.offsetWidth;
+        messageText.classList.add("message-fail");
+        
 }
 function createTooShortMessage() {
         messageText.innerHTML = "The word's too short" 
         messageText.className = "message-fail";
+        messageText.classList.remove("message-fail");
+        void messageText.offsetWidth;
+        messageText.classList.add("message-fail");
 }
 function createNoEmptyStringMessage() {
         messageText.innerHTML = "Don't leave the field empty" 
         messageText.className = "message-fail";
+        messageText.classList.remove("message-fail");
+        void messageText.offsetWidth;
+        messageText.classList.add("message-fail");
 }
 
 
@@ -75,4 +89,13 @@ submitBtn.addEventListener("click", submitWord);
 inputBox.addEventListener("keypress", checkForKeypress);
 
 
+// retrieve the element
+// // const messageText = document.querySelector(".message-text");
 
+// // reset the transition by...
+// submitBtn.addEventListener("click", function(e) {
+//   e.preventDefault;
+//   messageText.classList.remove("message-success");
+//   void messageText.offsetWidth;
+//   messageText.classList.add("message-success");
+// }, false);
