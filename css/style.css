@@ -109,8 +109,14 @@ body {
 
 main {
   text-align: center;
-  max-width: 80%;
+  max-width: 40%;
   margin: 5rem auto 0 auto; }
+  @media (max-width: 112.5em) {
+    main {
+      max-width: 60%; } }
+  @media (max-width: 37.5em) {
+    main {
+      max-width: 80%; } }
 
 footer {
   position: absolute;
