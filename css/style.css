@@ -97,15 +97,6 @@ $breakpoint argument choices:
 
 html {
   font-size: 62.5%; }
-  @media (max-width: 112.5em) {
-    html {
-      font-size: 60%; } }
-  @media (max-width: 75em) {
-    html {
-      font-size: 56.2%; } }
-  @media (max-width: 56.25em) {
-    html {
-      font-size: 50%; } }
   @media (max-width: 37.5em) {
     html {
       font-size: 40%; } }
@@ -113,17 +104,13 @@ html {
 body {
   box-sizing: border-box;
   font-family: 'Courier New', Courier, monospace;
-  min-height: 100vh;
+  min-height: 95vh;
   position: relative; }
 
 main {
   text-align: center;
-  width: 80%;
-  margin: 0 auto; }
-  @media (max-width: 37.5em) {
-    main {
-      font-size: 40%;
-      width: 80%; } }
+  max-width: 80%;
+  margin: 5rem auto 0 auto; }
 
 footer {
   position: absolute;

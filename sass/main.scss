@@ -12,15 +12,15 @@
 html {
     font-size: 62.5%; // 1 rem = 10 px 10px/16px 62.5%
 
-    @include respond(big-desktop) {
-        font-size: 60%;
-    }
-    @include respond(tab-land) {
-        font-size: 56.2%;
-    }
-    @include respond(tab-port) {
-        font-size: 50%;
-    }
+    // @include respond(big-desktop) {
+    //     font-size: 60%;
+    // }
+    // @include respond(tab-land) {
+    //     font-size: 56.2%;
+    // }
+    // @include respond(tab-port) {
+    //     font-size: 50%;
+    // }
     @include respond(phone) {
         font-size: 40%;
     }
@@ -30,24 +30,15 @@ html {
 body {
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
-    min-height: 100vh;
+    min-height: 95vh;
     position: relative;
     
 }
 
 main {
     text-align: center;
-    width: 80%;
-    margin: 0 auto;
-    @include respond(big-desktop) {
-        // font-size: 60%;
-        // width: 60%;
-    }
-    @include respond(phone) {
-        font-size: 40%;
-        width: 80%;
-    }
-
+    max-width: 80%;
+    margin: 5rem auto 0 auto;
 }
 
 footer {
@@ -76,10 +67,6 @@ footer {
     font-size: 5rem;
     font-weight: 700;
 }
-
-// .actions {
-//     margin: auto;
-// }
 
 .word-definition {
     margin-top: 5rem;

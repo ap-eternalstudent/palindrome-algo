@@ -62,8 +62,6 @@ function createNoEmptyStringMessage() {
         messageText.classList.add("message-fail");
 }
 
-
-
 function checkWord() {
     
     let letters = [];
@@ -87,15 +85,3 @@ function checkWord() {
 
 submitBtn.addEventListener("click", submitWord);
 inputBox.addEventListener("keypress", checkForKeypress);
-
-
-// retrieve the element
-// // const messageText = document.querySelector(".message-text");
-
-// // reset the transition by...
-// submitBtn.addEventListener("click", function(e) {
-//   e.preventDefault;
-//   messageText.classList.remove("message-success");
-//   void messageText.offsetWidth;
-//   messageText.classList.add("message-success");
-// }, false);
