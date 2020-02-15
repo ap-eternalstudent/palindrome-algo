@@ -39,8 +39,8 @@ main {
     width: 80%;
     margin: 0 auto;
     @include respond(big-desktop) {
-        font-size: 60%;
-        width: 60%;
+        // font-size: 60%;
+        // width: 60%;
     }
     @include respond(phone) {
         font-size: 40%;
@@ -123,7 +123,7 @@ footer {
 }
 
 .btn-container {
-    margin-top: 10rem;
+    margin: 5rem 0 6rem 0;
     display: inline-block;
 }
 
